@@ -31,12 +31,20 @@ const mutations = {
 const actions = {
     getGoodsListActions(context) {
         getGoodsList({
-            size:context.state.size,
-            page:context.state.page
+            size: context.state.size,
+            page: context.state.page
         })
             .then(res => {
                 if (res.data.code == 200) {
-                    context.commit("REQ_GOODSLIST", res.data.list);
+                    let data=res.data.list?res.data.list:[];
+                    context.commit("REQ_GOODSLIST", data);
+                    //判断，看是不是第一页，如果不是并且你当前的这个列等于0；
+                    if (context.state.page != 1 && data.length == 0) {
+                        context.dispatch('getGoodsPageActions', context.state.page - 1);
+                        context.dispatch('getGoodsCountActions');
+                        context.dispatch('getGoodsListActions');
+                        return;
+                    }
                 }
             })
     },

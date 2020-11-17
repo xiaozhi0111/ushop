@@ -41,7 +41,14 @@ const actions={
         .then(res=>{
             // console.log(res,'响应成功');
             if(res.data.code==200){
-                context.commit('REQ_SPECSLIST',res.data.list);
+                let data=res.data.list?res.data.list:[];
+                context.commit('REQ_SPECSLIST',data);
+                //判断，看是不是第一页，如果不是并且你当前的这个列等于0；
+                if(context.state.page!=1&&data.length==0){
+                    context.dispatch('getSpecsPageActions',context.state.page-1);
+                    context.dispatch('getSpecsListActions');
+                    return ;
+                }
             }
         })
     },
