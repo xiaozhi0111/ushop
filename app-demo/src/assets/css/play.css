@@ -1,0 +1,28 @@
+.play {
+    left: 0;
+    position: fixed;
+    background: #464547;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 150;
+}
+
+.play_img {
+    position: relative;
+}
+
+.play_img_bg {
+    width: 4.96rem;
+    height: 4.96rem;
+    margin: 1.4rem auto;
+    border: 1px solid red;
+    background: url(../images/play1-3.png) no-repeat;
+    background-size: 4.96rem;
+}
+.img_content{
+    width: 4.5rem;
+    height: 4.5rem;
+    border:1px solid red;
+    margin: 0 auto;
+}
