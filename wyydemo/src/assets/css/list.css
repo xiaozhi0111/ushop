@@ -1,0 +1,208 @@
+.list{
+    width: 100%;
+}
+.listStart{
+    width: 100%;
+    height: 4rem;
+}
+.listStart-bg{
+    width: 100%;
+    height: 4rem;
+    /* background-image: url(../images/tj1.jpg); */
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: 50%; */
+}
+.listStart-bg1{
+    width: 100%;
+    height: 4rem;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .7;
+    background: #000;
+}
+.bg-content{
+    width:6.5rem;
+    height:2.9rem;
+    position: relative;
+    left: .4rem;
+    top: .8rem;
+    z-index: 100;
+    color: #fff;
+    display:flex
+}
+.playlist_img{
+    width: 2.52rem;
+    height: 2.52rem;
+}
+.playlist_img img{
+    width: 2.52rem;
+}
+.playlist_cont{
+    margin-left: .3rem;
+}
+.text1{
+    font-size: 18px;
+}
+.text2{
+    height: .6rem;
+    margin-top: .4rem;
+    line-height: .6rem;
+    font-size: 14px;
+    color: #ffffff
+}
+.text2_img{
+    display: inline-block;
+    /* margin-top: .4rem;    */
+    text-align: center;
+    width: 1rem;
+    height: .6rem; 
+    line-height: .6rem;
+    position: relative;
+    top:.1rem;
+    left: .15rem;
+}
+.text2_img img{
+    width:.6rem;
+    height: .6rem;
+    border-radius: 50%;
+}
+.text2_img span{
+    position: relative;
+    top:0;
+    left: -.1rem;
+    
+}
+.text2_img span img{
+    width: .25rem;
+    height: .25rem;
+}
+
+
+/* 歌曲列表的css */
+.list .songs h5{
+    height: 23px;
+    line-height: 23px;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #666;
+    background-color: #eeeff0;
+}
+.songsList{
+    width: 100%;
+}
+.songsOne{
+    width: 100%;
+    height: 1.1rem;
+    display: flex;
+    border-bottom: 1px solid #eee;
+    margin-top: .2rem;
+}
+.songsOne .uid{
+    width: 1rem;
+    height: 1.1rem;
+    line-height: 1.1rem;
+    color: gray;
+    font-size: 17px;
+    text-align: center;
+}
+.songsOne .detile{
+    width: 5.66rem;
+    height:1.1rem;
+    flex:1;
+}
+.songsOne .detile .name{
+    width: 5.66rem;
+    height:.5rem;
+    line-height: .5rem;
+    font-size: 17px;
+    color: #333;
+    overflow: hidden;
+}
+.songsOne .detile .singer{
+    width: 5.68rem;
+    height: .36rem;
+    line-height: .36rem;
+    font-size: 12px;
+    color: #888;
+    margin-top: .1rem;
+    overflow: hidden;
+}
+/* .songsOne .detile .singer i{
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    margin-right: 4px;
+    background:url(../images/hot-bj2.png);
+    background-size: 166px 97px;
+} */
+.songsOne .play{
+    width: 22px ;
+    height: 22px;
+    padding:0 10px;
+    float: right;
+    margin-top: .3rem;
+}
+.songsOne .play span{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background:url(..//images//hot-bj2.png) no-repeat;
+    background-size: 166px 97px;
+    background-position: -24px 0;
+}
+/* 脚部部分css */
+.footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background:white;
+}
+.footer-cont{
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    padding: 13px 16px;
+}
+.footer-cont span{
+    display: inline-block;
+    height: 34px;
+    width: 34px;
+    background-image: url(../images/wyy-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    flex-shrink: 0;
+}
+.footer-cont .text1{
+    color: #666;
+    height: 34px;
+    font-size: 13px;
+    display: inline-block;
+    flex-shrink: 1;
+    padding-right: 8px;
+    padding-left: 4px;
+}
+.footer-cont .text2{
+    font-size: 14px;
+    width: 8em;
+    text-align: center;
+    color: #fff;
+    height: .6rem;
+    line-height: .6rem;
+    background-image: linear-gradient(-90deg,#ff5a4c,#ff1d12);
+    border-radius: 20px;
+    flex-shrink: 0;
+    margin-top: 0;
+}

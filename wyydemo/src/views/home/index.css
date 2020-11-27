@@ -1,0 +1,173 @@
+/* //清浮动 */
+.clearFix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+h5{
+    font-weight: none;
+}
+/* 推荐歌单css */
+.homeIndex{
+    padding:.4rem 0 0 0;
+    background:#fcfcfd;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 3.5rem;
+}
+.homeIndex .recommend{
+    margin-top: .4rem;
+}
+.homeIndex .recommend .h5{
+    margin: 0 0 .28rem;
+    padding: 0 0 0 .09rem;
+    font-size: 17px;
+    color: #333;
+    border-left: 2px solid red;
+}
+.homeIndex .recommend ul li{
+    width: 2.4rem;
+    float: left;
+    margin-bottom: .3rem;
+}
+.homeIndex .recommend ul li img{
+    width: 2.35rem;
+    height: 2.35rem;
+}
+.homeIndex .recommend ul li p{
+    width: 2.35rem;
+    height: .7rem;
+    padding:6px px 0 0px;
+    font-size: 13px;
+    overflow: hidden;
+}
+/* //最新音乐css */
+.homeIndex .lastest .h5{
+    margin: 0 0 .28rem;
+    padding: 0 0 0 .09rem;
+    font-size: 17px;
+    color: #333;
+    border-left: 2px solid red;
+    /* height: .3rem;    */
+}
+.homeIndex .lastest .newsList{
+    width: 100%;
+}
+.homeIndex .lastest .newsList a{
+    width: 100%;
+    /* padding-left: .2rem; */
+    
+}
+.homeIndex .lastest .newsList a .singlist{
+    padding: .15rem 0;
+    border-bottom: 1px solid #eee;
+}
+.homeIndex .lastest .newsList a .singlist .detail {
+    width: 80%;
+    padding-left: .2rem;
+    float: left;
+}
+.homeIndex .lastest .newsList a .singlist .detail .name{
+    height: 20px;
+    font-size: 17px;
+    color: #333;
+    overflow: hidden;
+}
+.homeIndex .lastest .newsList a .singlist .detail .singer{
+    font-size: 12px;
+    color:#888;
+    margin-top: .1rem;
+    height: .36rem;
+    overflow: hidden;
+}
+.homeIndex .lastest .newsList a .singlist .detail .singer i{
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    margin-right: 4px;
+    background:url(../../assets//images/hot-bj2.png);
+    background-size: 166px 97px;
+}
+.homeIndex .lastest .newsList a .singlist .detail .singer span{
+    font-size: 12px;
+}
+.homeIndex .lastest .newsList a .singlist .sgchfr{
+    width: 22px ;
+    height: 22px;
+    padding:0 10px;
+    float: right;
+    margin-top: .1rem;
+}
+.homeIndex .lastest .newsList a .singlist .sgchfr11{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background:url(../../assets//images//hot-bj2.png) no-repeat;
+    background-size: 166px 97px;
+    background-position: -24px 0;
+}
+/* //footer脚部css部分 */
+.homeIndex .footer{
+    width:100%;
+    text-align:center;
+    padding: 1.3rem 0 .4rem;
+    background: url(../../assets/images/tj-bj1.png) no-repeat;
+    position: relative;
+}
+.homeIndex .footer .title1{
+    font-size: 35px;
+    color: black;
+}
+.homeIndex .footer .text1{
+    color: #d33a31;
+    font-size: 16px;
+    width: 6rem;
+    height: .8rem;
+    line-height: .8rem;
+    margin:15px 30px 5px;
+    border: 1px solid #d33a31;
+    border-radius: .4rem;
+}
+/* .homeIndex .footer .title1 i{
+    display:inline-block;
+    width: .7rem;
+    height: .7rem;
+    margin-top: .2rem;
+    background:url(../../assets/images/wyy-bg.png);
+    background-size: contain;
+} */
+.homeIndex .footer .coperight{
+    width: 6.1rem;
+    height:.32rem;
+    line-height: .32rem;
+    color:#888;
+    font-size:10px;
+    text-align: center;
+    margin-left: .6rem;
+    margin-top: .2rem;
+}
